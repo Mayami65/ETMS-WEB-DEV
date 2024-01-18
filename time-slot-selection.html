@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Slot Selection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .btn-primary {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4 mb-4">Time Slot Selection</h2>
+
+        <!-- Time Slot Selection Form -->
+        <select class="form-control" id="timeSlot">
+            <option>8:00 AM - 9:00 AM</option>
+            <option>9:00 AM - 10:00 AM</option>
+            <option>10:00 AM - 11:00 AM</option>
+            <!-- Add more time slots as needed -->
+        </select>
+        <button type="button" class="btn btn-primary mt-2" onclick="bookTimeSlot()">Book Time Slot</button>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="time-slot-selection-script.js"></script>
+</body>
+</html>

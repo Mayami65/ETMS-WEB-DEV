@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .btn-primary {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4 mb-4">Employee Registration</h2>
+
+        <!-- Employee Registration Form -->
+        <form>
+            <div class="form-group">
+                <label for="employeeName">Name:</label>
+                <input type="text" class="form-control" id="employeeName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="employeeUsername">Username:</label>
+                <input type="text" class="form-control" id="employeeUsername" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="employeePassword">Password:</label>
+                <input type="password" class="form-control" id="employeePassword" placeholder="Enter password">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="employeeRegister()">Register</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="employee-registration-script.js"></script>
+</body>
+</html>

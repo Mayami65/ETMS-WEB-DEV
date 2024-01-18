@@ -1,0 +1,121 @@
+<!-- admin-dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Employee Transport Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-left: 250px; /* Adjusted for fixed sidebar */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            height: 100%;
+            background-color: #007bff;
+            padding-top: 20px;
+            transition: 0.5s;
+            z-index: 1;
+        }
+
+        .sidebar a {
+            padding: 15px 15px 15px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #fff;
+            background-color: #0056b3;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            transition: margin-left 0.5s;
+            padding: 30px;
+        }
+
+        .widget {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <a href="admin-login.html">Admin Login</a>
+        <a href="employee.html">Employee Portal</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+        <a href="admin-dashboard.html">Admin Dashboard</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Admin Dashboard Content -->
+        <div class="container mt-4">
+            <h2 class="mb-4">Welcome to Admin Dashboard</h2>
+
+            <!-- Sample Widgets -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="widget">
+                        <h2>Recent Bookings</h2>
+                        <p>View and manage recent employee pick-up and drop-off bookings.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="widget">
+                        <h2>Driver Management</h2>
+                        <p>Manage and add new drivers to the transport system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="widget">
+                        <h2>Vehicle Management</h2>
+                        <p>Manage and add new vehicles for employee transportation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="widget">
+                        <h2>Time Slot Management</h2>
+                        <p>View and manage time slots for pick-ups and drop-offs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
